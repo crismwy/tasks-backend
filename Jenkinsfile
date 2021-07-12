@@ -68,7 +68,7 @@ pipeline {
         }
         stage ('Health Check') {
             steps {
-                sleep(300)
+                sleep(600)
                 dir('functional-test') {
                     bat 'λ mvn verify -Dskip.surefire.tests'
                 }
